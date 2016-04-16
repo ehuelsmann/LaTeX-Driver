@@ -1,6 +1,6 @@
 Revision history for the LaTeX::Driver module                -*- indented-text -*-
 
-0.300.1 2016-04-12
+0.300.0 2016-04-16
     - Fix 0.20 refactoring made stdout 'bleed' into caller's stdout
 
     - Add more formats for explicit processor (pdf|xe)latex selection
