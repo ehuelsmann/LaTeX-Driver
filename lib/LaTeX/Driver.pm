@@ -79,6 +79,7 @@ our %FORMATTERS  = (
     pdf        => [ 'xelatex' ],
     'pdf(pdflatex)' => [ 'pdflatex' ],
     'pdf(xelatex)'  => [ 'xelatex' ],
+    'ps(xelatex)'  => [ 'xelatex', 'pdf2ps' ],
     'pdf(dvi)'      => [ 'latex', 'dvipdfm' ],
     'pdf(ps)'       => [ 'latex', 'dvips', 'ps2pdf' ],
     'ps(pdf)'       => [ 'pdflatex', 'pdf2ps' ],
