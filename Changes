@@ -1,5 +1,12 @@
 Revision history for the LaTeX::Driver module                -*- indented-text -*-
 
+0.300.0 2016-04-16
+    - Fix 0.20 refactoring made stdout 'bleed' into caller's stdout
+
+    - Add more formats for explicit processor (pdf|xe)latex selection
+
+    - Win32 fixes
+
 0.200.4 2014-04-12
     - Disabled bibtex tests by default due to frequently not found LaTex
       sty not found.

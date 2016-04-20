@@ -39,7 +39,7 @@ use Capture::Tiny qw(capture);
 
 Readonly our $DEFAULT_MAXRUNS => 10;
 
-our $VERSION = "0.200.4";
+our $VERSION = "0.300.0";
 
 __PACKAGE__->mk_accessors( qw( basename basedir basepath options
                                source output tmpdir format timeout stderr
@@ -79,6 +79,7 @@ our %FORMATTERS  = (
     pdf        => [ 'xelatex' ],
     'pdf(pdflatex)' => [ 'pdflatex' ],
     'pdf(xelatex)'  => [ 'xelatex' ],
+    'ps(xelatex)'  => [ 'xelatex', 'pdf2ps' ],
     'pdf(dvi)'      => [ 'latex', 'dvipdfm' ],
     'pdf(ps)'       => [ 'latex', 'dvips', 'ps2pdf' ],
     'ps(pdf)'       => [ 'pdflatex', 'pdf2ps' ],
