@@ -4,7 +4,6 @@ LaTeX-Driver-*
 Makefile
 Makefile.old
 MANIFEST.old
-META.yml
 MYMETA.json
 MYMETA.yml
 blib
