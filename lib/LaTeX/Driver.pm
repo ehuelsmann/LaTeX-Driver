@@ -682,19 +682,25 @@ sub run_command {
     # Format the command appropriately for our O/S
 
     my $exit_status;
+    my $exit_error;
     my ($stdout, $stderr);
     if ($OSNAME eq 'MSWin32') {
         $args = join(' ', @$args);
         $cmd  = "\"$program\" $args";
         ($stdout, $stderr) = capture {
             $exit_status = system($cmd);
+            $exit_error = "$!";
         };
     }
     else {
         $args = "'$args'" if $args =~ / \\ /mx;
         ($stdout, $stderr) = capture {
             $exit_status = system($program, @$args);
+            $exit_error = "$!";
         };
+    }
+    if ($exit_status == -1) {
+        $self->throw( "Failure to start $program: $exit_error" );
     }
     $self->{stderr} .= $stderr
         if $self->{capture_stderr};
