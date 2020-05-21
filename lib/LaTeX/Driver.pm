@@ -7,10 +7,11 @@
 #   Chris Travers <chris.travers@gmail.com>  (current maintainer)
 #
 # COPYRIGHT
-#   Copyright (C) 2014  Chris Travers.  
-#   Copyright (C) 2009-2013 Ford & Mason Ltd.  
-#   Copyright (C) 2006-2007 Andrew Ford.  
-#   Portions Copyright (C) 1996-2006 Andy Wardley.  
+#   Copyright (C) 2020  Erik Huelsmann.
+#   Copyright (C) 2014  Chris Travers.
+#   Copyright (C) 2009-2013 Ford & Mason Ltd.
+#   Copyright (C) 2006-2007 Andrew Ford.
+#   Portions Copyright (C) 1996-2006 Andy Wardley.
 #
 #   This module is free software; you can redistribute it and/or
 #   modify it under the same terms as Perl itself.
@@ -39,7 +40,7 @@ use Capture::Tiny qw(capture);
 
 Readonly our $DEFAULT_MAXRUNS => 10;
 
-our $VERSION = "0.300.2";
+our $VERSION = "1.0.0";
 
 __PACKAGE__->mk_accessors( qw( basename basedir basepath options
                                source output tmpdir format timeout stderr
@@ -842,7 +843,7 @@ LaTeX::Driver - Latex driver
 
 =head1 VERSION
 
-This document describes version 0.200.4 of C<LaTeX::Driver>.
+1.0.0
 
 =head1 SYNOPSIS
 
