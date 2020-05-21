@@ -1,5 +1,11 @@
 Revision history for the LaTeX::Driver module                -*- indented-text -*-
 
+0.300.2 2016-04-21
+    - Added ps support via pdflatex
+
+0.300.1 2016-04-17
+    - Added ps support for xelatex
+
 0.300.0 2016-04-16
     - Fix 0.20 refactoring made stdout 'bleed' into caller's stdout
 
