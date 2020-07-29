@@ -42,7 +42,7 @@ our $DEBUGPREFIX;
 
 # LaTeX executable paths set at installation time by the Makefile.PL
 
-our @PROCESSORS      = qw(xelatex lulaatex pdflatex latex);
+our @PROCESSORS      = qw(xelatex lualatex pdflatex latex);
 our @AUXILLARY_PROGS = qw(bibtex makeindex);
 our @POSTPROCESSORS  = qw(dvips dvipdfm ps2pdf pdf2ps);
 our @PROGRAM_NAMES   = (@PROCESSORS, @AUXILLARY_PROGS, @POSTPROCESSORS);
