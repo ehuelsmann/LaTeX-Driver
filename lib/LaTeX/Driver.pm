@@ -67,12 +67,15 @@ our %FORMATTERS  = (
     pdf        => [ 'xelatex' ],
     'pdf(pdflatex)' => [ 'pdflatex' ],
     'pdf(xelatex)'  => [ 'xelatex' ],
+    'pdf(lualatex)'  => [ 'lualatex' ],
     'ps(xelatex)'  => [ 'xelatex', 'pdf2ps' ],
+    'ps(lualatex)'  => [ 'lualatex', 'pdf2ps' ],
     'pdf(dvi)'      => [ 'latex', 'dvipdfm' ],
     'pdf(ps)'       => [ 'latex', 'dvips', 'ps2pdf' ],
     'ps(pdf)'       => [ 'pdflatex', 'pdf2ps' ],
     'ps(pdflatex)'       => [ 'pdflatex', 'pdf2ps' ],
     'ps(xelatex)'       => [ 'xelatex', 'pdf2ps' ],
+    'ps(lualatex)'       => [ 'lualatex', 'pdf2ps' ],
 );
 
 
@@ -903,6 +906,42 @@ Format).  The follow special values are also accepted: C<"pdf(ps)">
 C<"pdf(dvi)"> (generates PDF via dvi, using C<dvipdfm>).  If not
 specified then the format is determined from the name of the output
 document if specified, or defaults to PDF.
+
+The following list of formats is supported
+
+=over
+
+=item * dvi
+
+=item * ps
+
+=item * postscript
+
+=item * pdf
+
+=item * pdf(pdflatex)
+
+=item * pdf(xelatex)
+
+=item * pdf(lualatex)
+
+=item * ps(xelatex)
+
+=item * ps(lualatex)
+
+=item * pdf(dvi)
+
+=item * pdf(ps)
+
+=item * ps(pdf)
+
+=item * ps(pdflatex)
+
+=item * ps(xelatex)
+
+=item * ps(lualatex)
+
+=back
 
 =item C<tmpdir>
 
