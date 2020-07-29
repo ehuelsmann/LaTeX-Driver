@@ -27,7 +27,7 @@ use Capture::Tiny qw(capture);
 
 Readonly our $DEFAULT_MAXRUNS => 10;
 
-our $VERSION = "1.1.0";
+our $VERSION = "1.1.1";
 
 __PACKAGE__->mk_accessors( qw( basename basedir basepath options
                                source output tmpdir format timeout stderr
@@ -68,8 +68,6 @@ our %FORMATTERS  = (
     'pdf(pdflatex)' => [ 'pdflatex' ],
     'pdf(xelatex)'  => [ 'xelatex' ],
     'pdf(lualatex)'  => [ 'lualatex' ],
-    'ps(xelatex)'  => [ 'xelatex', 'pdf2ps' ],
-    'ps(lualatex)'  => [ 'lualatex', 'pdf2ps' ],
     'pdf(dvi)'      => [ 'latex', 'dvipdfm' ],
     'pdf(ps)'       => [ 'latex', 'dvips', 'ps2pdf' ],
     'ps(pdf)'       => [ 'pdflatex', 'pdf2ps' ],
@@ -833,7 +831,7 @@ LaTeX::Driver - Latex driver
 
 =head1 VERSION
 
-1.0.0
+1.1.1
 
 =head1 SYNOPSIS
 
@@ -924,10 +922,6 @@ The following list of formats is supported
 =item * pdf(xelatex)
 
 =item * pdf(lualatex)
-
-=item * ps(xelatex)
-
-=item * ps(lualatex)
 
 =item * pdf(dvi)
 

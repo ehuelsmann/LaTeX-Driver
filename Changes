@@ -1,5 +1,9 @@
 Revision history for the LaTeX::Driver module                -*- indented-text -*-
 
+1.1.1   2020-07-29
+   - Fix version number presented in the POD VERSION section
+   - Remove duplication in listed formats
+
 1.1.0   2020-07-29
    - Fix RT #133061: typo in @PROCESSORS ('lulaatex')
    - Add documentation of the supported processor/format combinations
