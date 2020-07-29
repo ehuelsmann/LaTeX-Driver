@@ -27,7 +27,7 @@ use Capture::Tiny qw(capture);
 
 Readonly our $DEFAULT_MAXRUNS => 10;
 
-our $VERSION = "1.0.0";
+our $VERSION = "1.1.0";
 
 __PACKAGE__->mk_accessors( qw( basename basedir basepath options
                                source output tmpdir format timeout stderr
