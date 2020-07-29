@@ -3,19 +3,6 @@
 # DESCRIPTION
 #   Driver module that encapsulates the details of formatting a LaTeX document
 #
-# AUTHOR
-#   Chris Travers <chris.travers@gmail.com>  (current maintainer)
-#
-# COPYRIGHT
-#   Copyright (C) 2020  Erik Huelsmann.
-#   Copyright (C) 2014  Chris Travers.
-#   Copyright (C) 2009-2013 Ford & Mason Ltd.
-#   Copyright (C) 2006-2007 Andrew Ford.
-#   Portions Copyright (C) 1996-2006 Andy Wardley.
-#
-#   This module is free software; you can redistribute it and/or
-#   modify it under the same terms as Perl itself.
-#
 
 package LaTeX::Driver;
 
@@ -1384,14 +1371,15 @@ the web2c TeX distribution, TeX live, tetex, TeX on Windows, etc.
 
 =head1 AUTHOR
 
-Andrew Ford E<lt>a.ford@ford-mason.co.ukE<gt>
-
+   Chris Travers <chris.travers@gmail.com>  (current maintainer)
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2009-2011 Ford & Mason Ltd.  All Rights Reserved.
-
-Copyright (C) 2007 Andrew Ford.  All Rights Reserved.
+   Copyright (C) 2020  Erik Huelsmann.
+   Copyright (C) 2014  Chris Travers.
+   Copyright (C) 2009-2013 Ford & Mason Ltd.
+   Copyright (C) 2006-2007 Andrew Ford.
+   Portions Copyright (C) 1996-2006 Andy Wardley.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
