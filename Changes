@@ -1,4 +1,8 @@
 Revision history for the LaTeX::Driver module                -*- indented-text -*-
+1.2.0   2020-10-29
+   - Add logging through Log::Any
+   - Remove modification of global variables from object method execution
+     (just use it to initialize values when not provided as arguments)
 
 1.1.1   2020-07-29
    - Fix version number presented in the POD VERSION section
