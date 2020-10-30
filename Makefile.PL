@@ -27,6 +27,7 @@ requires 'Readonly';
 
 test_requires 'Test::More' => '0.88';
 
+author_requires 'Carp::Always';
 author_requires 'Test::NoTabs';
 author_requires 'Test::Pod' => '1.14';
 author_requires 'Test::Pod::Coverage' => '1.04';
